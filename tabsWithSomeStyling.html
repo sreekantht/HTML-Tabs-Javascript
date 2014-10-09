@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Tabs</title>
+		<!--- Javascript to do the magic -->
+		<script type="text/javascript">
+			var currentTab = "tab1"; 
+			function showTab(tabToDisplay) {
+					if(tabToDisplay != currentTab){
+						document.getElementById(tabToDisplay).style.display = "block";
+						document.getElementById(currentTab).style.display = "none";
+						currentTab = tabToDisplay;
+					}
+			}
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="tabstyling.css">
+	</head>
+	<body>
+		<input type="button" id="tab1Button" value="Show Tab 1" onclick="showTab('tab1')"/>
+		<input type="button" id="tab2Button" value="Show Tab 2" onclick="showTab('tab2')"/>
+		<input type="button" id="tab3Button" value="Show Tab 3" onclick="showTab('tab3')"/>
+		<input type="button" id="tab4Button" value="Show Tab 4" onclick="showTab('tab4')" />
+		
+		<div id="tabs">
+			<div id="tab1">
+				<p>This is the first tab! Hello Tab 1! </p>
+			</div>
+			<div id="tab2" style="display: none;">
+				<p>This is the second tab! Hello Tab 2! </p>
+			</div>
+			<div id="tab3" style="display: none;">
+				<p>This is the third tab! Hello Tab 3! </p>
+			</div>
+			<div id="tab4" style="display: none;">
+				<p>This is the fourth tab! Hello Tab 4! </p>
+			</div>
+		</div>
+	<body>
+<html>

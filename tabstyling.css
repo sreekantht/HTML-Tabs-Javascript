@@ -1,0 +1,18 @@
+#tabs{
+	background-color: #D4EDFF;
+	border: 1px solid;
+	border-color: #165A8A;
+	width: 600px;
+	padding-left: 10px;
+	margin-top: -3px;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+    background-color: #d3dce0;
+    border: 1px solid #787878;
+    cursor: pointer;
+    padding: 7px;
+    width: 150px;
+}
